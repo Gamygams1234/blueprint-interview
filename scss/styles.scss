@@ -1,0 +1,686 @@
+$darkerBlueHeader: #03446c;
+$lighterBlueHeader: #0091c5;
+$yellowButton: #f9b712;
+$redButton: #c31030;
+$navyLetters: #072a51;
+$heroBackground: #004f85;
+$heroBackgroundGradient: #889d86;
+$blueBtn: #6dd7ff;
+$footer: #03446c;
+
+$donateButton: #013f69;
+$donateButtonBorder: #6dd7ff;
+
+$selectedButton: #f9b712;
+$selectedButtonOutline: #27515b;
+
+$proflieMessgeBlue: hsl(204, 100%, 26%, 0.7);
+$proflieMessgeGold: hsl(115, 11%, 57%, 0.7);
+
+a:visited {
+  color: white; /* Color for visited links */
+}
+
+.btn {
+  background-color: #007bff;
+  // border: 1px solid #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5rem;
+  border: 0px solid;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.yellow-btn {
+  background-color: $yellowButton;
+  color: $navyLetters;
+}
+.red-btn {
+  background-color: $redButton;
+}
+.blue-btn {
+  background-color: $blueBtn;
+  color: $navyLetters;
+}
+.container {
+  //   max-width: 1400px;
+  margin: 0 auto;
+}
+.outer-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, $darkerBlueHeader, $lighterBlueHeader);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+ 
+  z-index: 1;
+
+  .hamburger-menu span {
+    background: white;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+  }
+  .header-content {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      button {
+        text-transform: uppercase;
+      }
+      .social-media {
+        a {
+          img {
+            height: 3rem;
+            width: 3rem;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+    .cta-buttons {
+      display: none;
+      flex-direction: column;
+      background: $heroBackground;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .cta-buttons button,
+    .cta-buttons .social-media {
+      margin: 10px 0;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .cta-buttons.active {
+      display: flex;
+    }
+    .logo {
+      height: 4rem;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.signup {
+  // background-image: url("../source-files/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  display: flex;
+  flex-direction: column;
+  .mobile-hero {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background-image: url("../source-files/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  .hero-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 2rem;
+    background-color: $heroBackground;
+    background-image: linear-gradient(to top right, $heroBackground, $heroBackground, $heroBackgroundGradient);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    clip-path: none;
+    .hero-logo {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem;
+      margin-bottom: 1rem;
+      input {
+        padding: 10px;
+        background-color: #578dac;
+        border: 1px solid white;
+        color: white;
+      }
+      input::placeholder {
+        color: #e4ecf2;
+      }
+      input:first-child {
+        grid-column: 1/3;
+      }
+      button {
+        grid-column: 1/3;
+        text-transform: uppercase;
+      }
+    }
+
+    #warning {
+      color: red;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-family: "Fjalla One", sans-serif;
+      color: white;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.donate {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .donate-bg {
+    background-color: #00548d;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    h2 {
+      font-family: "Fjalla One", sans-serif;
+      color: white;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .donation-buttons {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 0.5rem; /* Vertical gap */
+      column-gap: 2rem; /* Horizontal gap */
+      .donation-btn {
+        position: relative;
+        background-color: $donateButton;
+        border: 0.5rem solid $donateButtonBorder;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 2.5rem;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        span {
+          font-size: 0.75em; /* Adjust as needed */
+          align-self: flex-start; /* Align dollar sign at the top */
+          margin-right: 5px; /* Adjust space between dollar sign and text */
+        }
+      }
+
+      .donation-btn:hover {
+        filter: brightness(1.25);
+      }
+      .donation-btn.active {
+        background-color: $selectedButton;
+        border: 0.5rem solid $selectedButtonOutline;
+        color: $selectedButtonOutline;
+      }
+      .donation-btn.active:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+}
+
+.meet-samantha {
+  display: flex;
+  flex-direction: column;
+  // for deskttop
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  h2 {
+    color: $navyLetters;
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .meet-details {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 3rem;
+
+    .profile {
+   
+      position: relative;
+      margin-bottom: 8rem;
+      .profile-image {
+        width: 100%;
+       
+        .image {
+          width: 100%;
+          background-image:url("/../source-files/cutout.png"), url("/../source-files/about-photo_2.png");
+          background-size: cover, cover;
+          background-position: center top 20px, center;
+          background-repeat: no-repeat, no-repeat;
+          aspect-ratio: 4/3;
+        }
+      }
+      .profile-info {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: -8rem;
+        color: white;
+        padding: 2rem 3rem;
+        width : 100%;
+        background-image: linear-gradient(to top right, $proflieMessgeBlue, $proflieMessgeBlue, $proflieMessgeGold);
+      }
+    }
+
+    .about {
+      line-height: 1.5;
+    }
+    .about-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+footer {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background: $footer;
+  color: white;
+  text-align: center;
+  .flex {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+    align-items: center;
+    img {
+      height: 7rem;
+      margin-bottom: 2rem;
+    }
+    .right {
+      border: 1px solid;
+      padding: 0.5rem 2rem;
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+
+    .privacy {
+      display: flex;
+      a {
+        margin-right: 0.5rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// breakpints for mobile responsiveness
+
+@media (min-width: 576px) {
+  /* CSS rules for small screens and up */
+}
+
+@media (min-width: 768px) {
+  /* CSS rules for medium screens and up */
+  .outer-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+  }
+
+  header {
+    position: sticky;
+    top : 0;
+    .header-content {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .hamburger-menu {
+        display: none;
+      }
+
+      .cta-buttons {
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        button {
+          text-transform: uppercase;
+          margin-left: 1rem;
+        }
+        .social-media {
+          display: flex;
+          flex-direction: row;
+          a {
+            img {
+              height: 3rem;
+              width: 3rem;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+      .logo {
+        height: 4rem;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .donate {
+    .donate-bg {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .donation-buttons {
+        grid-template-columns: 1fr 1fr;
+        .donation-btn{
+          order: initial;
+        }
+        .donation-btn:nth-child(1){
+          order: 1;
+      }
+  
+      .donation-btn:nth-child(2) {
+          order: 3;
+      }
+  
+      .donation-btn:nth-child(3) {
+          order: 4;
+      }
+  
+        .other-btn{
+          order: 2;
+        }
+      }
+
+    }
+  }
+
+  .meet-samantha {
+    display: flex;
+    flex-direction: column;
+    // for deskttop
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    h2 {
+    
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-align: left;
+    }
+  
+    .meet-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+  
+      .profile {
+        grid-column: 1/3;
+
+        position: relative;
+        .profile-image {
+         
+          position: static;
+        }
+        .profile-info{
+          width: 100%;
+          left: 50%;
+        }
+ 
+      }
+  
+    
+    }
+  }
+
+
+  // Footer
+  footer {
+    color: white;
+    text-align: center;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      flex-direction: row;
+      align-items: flex-end;
+      img {
+        height: 5rem;
+        margin: 0;
+      }
+      .right {
+        padding: 0.5rem 3rem;
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      .privacy {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  /* CSS rules for large screens and up */
+  .signup {
+    flex-direction: row;
+    background-image: url("../source-files/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    .mobile-hero {
+      display: none;
+    }
+    .hero-details {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-right: 2rem;
+      background-color: $heroBackground;
+      background-image: linear-gradient(to top right, $heroBackground, $heroBackground, $heroBackgroundGradient);
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      .hero-logo {
+        width: 60%;
+        margin-bottom: 2rem;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+        margin-bottom: 1rem;
+        input {
+          padding: 10px;
+          background-color: #578dac;
+          border: 1px solid white;
+          color: white;
+        }
+        input::placeholder {
+          color: #e4ecf2;
+        }
+        input:first-child {
+          grid-column: 1/3;
+        }
+        button {
+          grid-column: 1/3;
+          text-transform: uppercase;
+        }
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-family: "Fjalla One", sans-serif;
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .meet-samantha{
+    
+    .meet-details{
+      .profile {
+     
+        
+        .profile-image {
+          width: 33rem;
+          position: static;
+        }
+        .profile-info {
+          position: absolute;
+    
+     
+          transform: translateY(-50%);
+          // bottom: 50%;
+          bottom: calc( 50% - 8rem);
+          color: white;
+          padding: 2rem 3rem;
+          left:23rem;
+          background-image: linear-gradient(to top right, $proflieMessgeBlue, $proflieMessgeBlue, $proflieMessgeGold);
+        }
+      }
+    }
+  }
+  
+  .profile-info {
+    max-width: 500px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* CSS rules for large screens and up */
+
+  .signup {
+    .hero-details {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-right: 2rem;
+      background-color: $heroBackground;
+      background-image: linear-gradient(to top right, $heroBackground, $heroBackground, $heroBackgroundGradient);
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+      .hero-logo {
+        width: 60%;
+        margin-bottom: 2rem;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+        margin-bottom: 1rem;
+        input {
+          padding: 10px;
+          background-color: #578dac;
+          border: 1px solid white;
+          color: white;
+        }
+        input::placeholder {
+          color: #e4ecf2;
+        }
+        input:first-child {
+          grid-column: 1/3;
+        }
+        button {
+          grid-column: 1/3;
+          text-transform: uppercase;
+        }
+      }
+
+      #warning {
+        color: red;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-family: "Fjalla One", sans-serif;
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

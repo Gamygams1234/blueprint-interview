@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kumbh+Sans:wght@100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <h1>Hello world</h1>
-</body>
+    <!-- Your HTML content -->
+    <header class="outer-container">
+        <div class="header-content container">
+            <div class="logo">
+                <img src="./source-files/SamanthaHall_Logo_reversed.png" alt="Samantha Hall Logo" />
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cta-buttons" id="cta-buttons">
+                <button class="volunteer btn yellow-btn">Volunteer</button>
+                <button class="btn red-btn">Donate</button>
+                <div class="social-media">
+                    <a href="#"><img src="./source-files/Social-icons/Twitter.png" alt="Twitter" /></a>
+                    <a href="#"><img src="./source-files/Social-icons/Facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="./source-files/Social-icons/IG.png" alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="signup">
+        <div class="mobile-hero"></div>
+        <div class="hero-details outer-container " data-aos="fade-right" data-aos-delay="200">
+            <img class="hero-logo" src="./source-files/SamanthaHall_Logo_reversed.png" alt="" />
+            <h2>
+                Stay in touch <br />
+                with Samantha
+            </h2>
+            <form id="signupForm">
+                <input type="email" placeholder="Email" id="email" required />
+                <input type="tel" placeholder="Phone" id="phone" required />
+                <input type="text" placeholder="ZIP" id="zip" required />
+                <button class="blue-btn btn" type="submit">Sign Up</button>
+            </form>
+            <div id="warning"></div>
+        </div>
+ 
+    </section>
+
+    <section class="donate outer-container"  data-aos="fade-in">
+        <div class="donate-bg">
+            <h2>Donate to Support Samantha's Campaign</h2>
+            <div class="donation-buttons">
+                <button class="donation-btn active"><span>$</span>25</button>
+                <button class="donation-btn"><span>$</span>50</button>
+                <button class="donation-btn"><span>$</span>100</button>
+                <button class="donation-btn other-btn">Other</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet-samantha outer-container" data-aos="fade-right">
+        <h2>Meet Samantha</h2>
+        <div class="meet-details">
+            <div class="profile">
+                <div class="profile-image">
+                   <div class="image"></div>
+                </div>
+                <div class="profile-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus placerat, facilisis tortor in, consectetur sem...</p>
+                </div>
+            </div>
+            <div class="about">
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lacinia felis eleifend posuere accumsan cubilia mus penatibus. Accumsan nascetur viverra dictumst primis condimentum ridiculus. Sapien ultricies viverra nisi gravida vehicula sit. Viverra non suspendisse lobortis arcu quis sit. Facilisi ullamcorper porttitor nunc; sem senectus elit ultricies. Odio rutrum volutpat egestas molestie quam inceptos ornare vivamus elit. Faucibus semper ridiculus ullamcorper turpis, habitasse tristique class facilisis. Urna senectus lacinia rhoncus mauris bibendum.</p> <br>
+                <p>Eros dictum dis ullamcorper luctus aliquam volutpat. Nullam litora ac erat lacinia suscipit; euismod pulvinar dapibus. At suspendisse tortor faucibus turpis condimentum. Hendrerit conubia neque habitasse sit; venenatis cras dis. Posuere commodo litora sollicitudin consectetur mattis donec lacus malesuada. Pulvinar aptent erat enim ex ut vivamus. Urna fringilla maecenas viverra rhoncus nec praesent maximus.</p>
+            </div>
+            <div class="about-image">
+                <img src="./source-files/about-photo_1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="outer-container" data-aos="fade-in">
+        <div class = "flex">
+            <div class="left">
+                <img src="./source-files/SamanthaHall_Logo_reversed.png" alt="" />
+            </div>
+            <div class="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="privacy">
+                <a href="#">Privacy Policy</a>
+                <span id="year">&copy;</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
