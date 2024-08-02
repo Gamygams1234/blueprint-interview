@@ -409,6 +409,7 @@ footer {
   .signup {
     .hero-details {
       form {
+        width: calc(100% - 3rem);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0.5rem;
