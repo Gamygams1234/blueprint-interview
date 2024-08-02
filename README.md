@@ -4,6 +4,8 @@
 
 This project is a landing page developed for Samantha Hall's Senate Campaign. The page is designed to be mobile-responsive and includes features such as a sticky header, form validation, Google Sheets integration for form submission, and various interactive elements.
 
+![Landing Page Screenshot](images/screenshot.png)
+
 ## Features
 
 - **Responsive Design:** Ensures compatibility across desktop, tablet, and mobile devices.
