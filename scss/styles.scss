@@ -22,8 +22,8 @@ html {
 
 // default a tag
 
-a{
-  color : white;
+a {
+  color: white;
 }
 
 a:visited {
@@ -44,7 +44,6 @@ a:visited {
   font-weight: 400;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-
 }
 .btn:hover {
   filter: brightness(1.1);
@@ -87,9 +86,7 @@ header {
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-
   z-index: 1;
-
   .hamburger-menu span {
     background: white;
     height: 3px;
@@ -104,7 +101,7 @@ header {
     .cta-buttons {
       display: flex;
       align-items: center;
-      
+
       .btn {
         text-transform: uppercase;
         font-size: 1rem;
@@ -127,7 +124,7 @@ header {
       flex-direction: column;
       background: $heroBackground;
       position: absolute;
-   
+
       top: 60px;
       right: 20px;
       width: 200px;
@@ -191,8 +188,9 @@ header {
     }
 
     form {
+      width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 0.5rem;
       margin-bottom: 1rem;
       input {
@@ -204,11 +202,7 @@ header {
       input::placeholder {
         color: #e4ecf2;
       }
-      input:first-child {
-        grid-column: 1/3;
-      }
       button {
-        grid-column: 1/3;
         text-transform: uppercase;
       }
     }
@@ -234,7 +228,7 @@ header {
       display: block;
       padding-top: 1rem;
       padding-bottom: 1rem;
-      h3{
+      h3 {
         font-family: "Fjalla One", sans-serif;
         color: white;
         font-size: 2.5rem;
@@ -411,6 +405,33 @@ footer {
 
 @media (min-width: 576px) {
   /* CSS rules for small screens and up */
+
+  .signup {
+    .hero-details {
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5rem;
+        margin-bottom: 1rem;
+        input {
+          padding: 10px;
+          background-color: #578dac;
+          border: 1px solid white;
+          color: white;
+        }
+        input::placeholder {
+          color: #e4ecf2;
+        }
+        input:first-child {
+          grid-column: 1/3;
+        }
+        button {
+          grid-column: 1/3;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -446,7 +467,7 @@ footer {
         .btn {
           text-transform: uppercase;
           margin-left: 1rem;
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
           font-size: 1rem;
         }
         .social-media {
@@ -588,41 +609,6 @@ footer {
       padding-top: 3rem;
       padding-bottom: 3rem;
       clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-      .hero-logo {
-        width: 60%;
-        margin-bottom: 2rem;
-      }
-
-      form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5rem;
-        margin-bottom: 1rem;
-        input {
-          padding: 10px;
-          background-color: #578dac;
-          border: 1px solid white;
-          color: white;
-        }
-        input::placeholder {
-          color: #e4ecf2;
-        }
-        input:first-child {
-          grid-column: 1/3;
-        }
-        button {
-          grid-column: 1/3;
-          text-transform: uppercase;
-        }
-      }
-
-      h2 {
-        text-transform: uppercase;
-        font-family: "Fjalla One", sans-serif;
-        color: white;
-        font-size: 4rem;
-        margin-bottom: 2rem;
-      }
     }
   }
   .meet-samantha {
@@ -671,41 +657,6 @@ footer {
       clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
       .hero-logo {
         width: 60%;
-        margin-bottom: 2rem;
-      }
-
-      form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5rem;
-        margin-bottom: 1rem;
-        input {
-          padding: 10px;
-          background-color: #578dac;
-          border: 1px solid white;
-          color: white;
-        }
-        input::placeholder {
-          color: #e4ecf2;
-        }
-        input:first-child {
-          grid-column: 1/3;
-        }
-        button {
-          grid-column: 1/3;
-          text-transform: uppercase;
-        }
-      }
-
-      #warning {
-        color: red;
-      }
-
-      h2 {
-        text-transform: uppercase;
-        font-family: "Fjalla One", sans-serif;
-        color: white;
-        font-size: 4rem;
         margin-bottom: 2rem;
       }
     }
