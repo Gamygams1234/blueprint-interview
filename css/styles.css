@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: white; /* Color for visited links */
 }

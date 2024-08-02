@@ -20,6 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+// default a tag
+
+a{
+  color : white;
+}
 
 a:visited {
   color: white; /* Color for visited links */
