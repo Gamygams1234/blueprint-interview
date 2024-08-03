@@ -44,6 +44,11 @@ a.yellow-btn {
   color: #072a51;
 }
 
+.yellow-btn {
+  background-color: #f9b712;
+  color: #072a51;
+}
+
 .red-btn {
   background-color: #c31030;
 }
@@ -434,9 +439,27 @@ footer .flex img {
   height: 7rem;
   margin-bottom: 2rem;
 }
-footer .flex .right {
-  border: 1px solid;
-  padding: 0.5rem 2rem;
+footer .flex .right h3 {
+  margin-bottom: 1rem;
+  font-family: "Fjalla One", sans-serif;
+}
+footer .flex .right form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-gap: 0.5rem;
+}
+footer .flex .right form input {
+  background-color: white;
+  border-radius: 3rem;
+  border: 0px solid;
+  padding: 0.5rem 1rem;
+}
+footer .flex .right form input .btn {
+  width: 100%;
+  margin: 0 0;
 }
 footer .bottom {
   display: -webkit-box;
@@ -665,7 +688,7 @@ footer .bottom .privacy a {
             align-items: flex-end;
   }
   footer .flex img {
-    height: 5rem;
+    height: 7rem;
     margin: 0;
   }
   footer .flex .right {

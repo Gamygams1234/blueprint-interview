@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentDonationDiv = document.getElementById("current-donation");
     const heroForm = document.getElementById("hero-form")
   
+    const volunteerForm = document.getElementById('volunteerForm');
+
     hamburgerMenu.addEventListener("click", () => {
       ctaButtons.classList.toggle("active");
     });
@@ -107,5 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("Form submission failed. Please try again.");
         });
     }
+
+    volunteerForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the form from submitting
+        alert('Thank you for volunteering!');
+    });
+      
+
   });
-  
+
+
