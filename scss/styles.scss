@@ -159,6 +159,51 @@ header {
   }
 }
 
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Optional: Add a caption */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 .signup {
   // background-image: url("../source-files/hero.png");
   background-repeat: no-repeat;
@@ -427,6 +472,15 @@ footer {
   }
 }
 
+#timeline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.twitter-timeline {
+  width: 100% !important;
+}
+
 // breakpints for mobile responsiveness
 
 @media (min-width: 576px) {
@@ -612,6 +666,8 @@ footer {
     }
   }
 }
+
+
 
 @media (min-width: 992px) {
   /* CSS rules for large screens and up */

@@ -77,6 +77,20 @@
       </div>
     </section>
 
+    <section class="slideshow-container outer-container">
+      <div class="slideshow">
+        <div class="slide fade">
+          <img src="./slideshow/slide1.jpg" alt="Image 1">
+        </div>
+        <div class="slide fade">
+          <img src="./slideshow/slide2.jpg"  alt="Image 2">
+        </div>
+        <div class="slide fade">
+          <img src="./slideshow/slide3.jpg"  alt="Image 3">
+        </div>
+      </div>
+    </section>
+
     <section class="meet-samantha outer-container" data-aos="fade-right">
       <h2>Meet Samantha</h2>
       <div class="meet-details">
@@ -105,13 +119,17 @@
       </div>
     </section>
 
+    <section id="twitter-grid" class="twitter-grid">
+
+    </section>
+
     <footer class="outer-container">
       <div class="flex">
         <div class="left">
           <img src="./source-files/SamanthaHall_Logo_reversed.png" alt="" />
         </div>
         <div id="volunteer" class="right">
-            <h3>Interested in Volunteering?</h3>
+          <h3>Interested in Volunteering?</h3>
           <form id="volunteerForm">
             <input type="email" placeholder="Email" name="" id="" />
             <button type="submit" class="btn blue-btn">Volunteer</button>
@@ -125,11 +143,12 @@
         </div>
       </div>
     </footer>
-
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/twitter.js"></script>
   </body>
 </html>
